@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CISC603Project")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec8194476eec2abb0ec6b5e19eb153c76724e218")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5111f52e71f37621f6037bf648d9f341ecd82a49")]
 [assembly: System.Reflection.AssemblyProductAttribute("CISC603Project")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CISC603Project")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
