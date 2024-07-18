@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CISC603Project")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c4e972297f3bb7372fd9b2a42b908b85e46642d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92a424339ab3ce4245b787f04b287522342aca19")]
 [assembly: System.Reflection.AssemblyProductAttribute("CISC603Project")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CISC603Project")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
