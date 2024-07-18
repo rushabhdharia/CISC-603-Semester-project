@@ -1,4 +1,6 @@
-﻿namespace CISC603Project
+﻿//Author - Rushabh Dharia
+
+namespace CISC603Project
 {
     internal class Driver
     {
@@ -53,7 +55,26 @@
 
         private static void UsePDA()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Enter a string to test PDA.");
+            var inputString = Console.ReadLine();
+
+            if (inputString == null)
+            {
+                Console.WriteLine("Invalid Input");
+                return;
+            }
+
+            PDA.PDA pda = new PDA.PDA();
+            var automata = pda.GetAutomata();
+
+            if (automata.IsAccepting(inputString))
+            {
+                Console.WriteLine("Input Accepted by PDA");
+            }
+            else
+            {
+                Console.WriteLine("Input Not Accepted by PDA");
+            }
         }
 
         static void Main()

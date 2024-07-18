@@ -1,3 +1,5 @@
+//Author - Rushabh Dharia
+
 namespace CISC603Project.NFA
 {
     public class State(string value)

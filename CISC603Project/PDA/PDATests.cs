@@ -3,24 +3,24 @@
 using FluentAssertions;
 using Xunit;
 
-namespace CISC603Project.NFA
+namespace CISC603Project.PDA
 {
-    public class NFATests
+    public class PDATests
     {
         //Arrange
         private readonly Automata automata;
 
-        public NFATests()
+        public PDATests()
         {
-            var NFA = new NFA();
-            automata = NFA.GetAutomata();
+            var pda = new PDA();
+            automata = pda.GetAutomata();
         }
 
         [Fact]
         public void Test1Accepting()
         {
             //Act
-            var result = automata.IsAccepting("+10.01");
+            var result = automata.IsAccepting("aab");
 
             //Assert
             result.Should().BeTrue();
@@ -30,7 +30,7 @@ namespace CISC603Project.NFA
         public void Test2Accepting()
         {
             //Act
-            var result = automata.IsAccepting("-133.031");
+            var result = automata.IsAccepting("aaaabb");
 
             //Assert
             result.Should().BeTrue();
@@ -40,7 +40,7 @@ namespace CISC603Project.NFA
         public void Test3Accepting()
         {
             //Act
-            var result = automata.IsAccepting("0.0111");
+            var result = automata.IsAccepting("aaaaaabbb");
 
             //Assert
             result.Should().BeTrue();
@@ -49,7 +49,7 @@ namespace CISC603Project.NFA
         public void Test1NotAccepting()
         {
             //Act
-            var result = automata.IsAccepting("1.1");
+            var result = automata.IsAccepting("ab");
 
             //Assert
             result.Should().NotBe(true);
@@ -57,7 +57,7 @@ namespace CISC603Project.NFA
         [Fact]
         public void Test2NotAccepting()
         {
-            var result = automata.IsAccepting("+2");
+            var result = automata.IsAccepting("aabbb");
 
             //Assert
             result.Should().NotBe(true);
@@ -66,7 +66,7 @@ namespace CISC603Project.NFA
         public void Test3NotAccepting()
         {
             //Act
-            var result = automata.IsAccepting("-400");
+            var result = automata.IsAccepting("aaaaaabb");
 
             //Assert
             result.Should().NotBe(true);
