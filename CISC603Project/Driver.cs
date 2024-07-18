@@ -29,7 +29,26 @@
 
         private static void UseNFA()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Enter a string to test NFA.");
+            var inputString = Console.ReadLine();
+
+            if (inputString == null)
+            {
+                Console.WriteLine("Invalid Input");
+                return;
+            }
+
+            NFA.NFA nfa = new NFA.NFA();
+            var automata = nfa.GetAutomata();
+
+            if (automata.IsAccepting(inputString))
+            {
+                Console.WriteLine("Input Accepted by NFA");
+            }
+            else
+            {
+                Console.WriteLine("Input Not Accepted by NFA");
+            }
         }
 
         private static void UsePDA()
