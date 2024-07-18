@@ -1,8 +1,11 @@
-﻿namespace DFA
+﻿// Author - Rushabh Dharia
+// Python Code used as Reference - https://stackoverflow.com/a/53771902
+
+namespace CISC603Project.DFA
 {
-    public class State(char value)
+    public class State(string value)
     {
-        public char Value = value;
+        public string Value = value;
 
         public List<Link> Links = [];
 
