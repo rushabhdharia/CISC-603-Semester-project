@@ -20,3 +20,38 @@
 2. Microsoft.NET.Test.Sdk
 3. xunit
 4. xunit.runner.visualstudio
+
+
+
+## Future Improvements
+1. Add verbose mode to show state transitions
+2. Allow user to edit a json file to dynamically build automata  
+e.g.  
+[  
+    {  
+        "DFA": {  
+            "InternalStates": [ "q1",  "q2",  "q4"],  
+            "InputAlphabets": ["a", "b", "c"],  
+            "Transitions": [["fromState","inputAlphabet","toState"], ["fromState","inputAlphabet","toState"], ...],  
+            "InitialState": "q0",  
+            "FinalStates": ["q3"]  
+        },  
+        "NFA": {  
+            "InternalStates": ["q1",  "q2",  "q3"],  
+            "InputAlphabets": ["+", "-", "lambda", "0", "1",  .., "9"],  
+            "Transitions": [["fromState","inputAlphabet","toState"], ["fromState","inputAlphabet","toState"], ...],  
+            "InitialState": "q0",  
+            "FinalStates": ["q4"]  
+        },  
+        "PDA": {  
+            "InternalStates": ["q1", "q2"],  
+            "InputAlphabets": ["a", "b", "lambda"],  
+            "StackAlphabets": ["a", "b"],  
+            "Transitions": [["fromState","inputAlphabet", "stackTop", "replacementString" ,"toState"], ["fromState","inputAlphabet", "stackTop", "replacementString" ,"toState"], ..],  
+            "InitialState": "q0",  
+            "StackStartSymbol": "z",  
+            "FinalStates": ["q3"]  
+        }  
+    }  
+]
+
