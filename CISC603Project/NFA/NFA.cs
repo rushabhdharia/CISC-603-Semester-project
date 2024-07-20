@@ -47,7 +47,7 @@ namespace CISC603Project.NFA
         public bool IsAccepting(String inputString)
         {
             State currentState = InitialState;
-            if (int.TryParse(inputString[0].ToString(), out _))
+            if (int.TryParse(inputString[0].ToString(), out _)|| inputString[0] == '.')
             {
                 inputString = "l" + inputString;
             }

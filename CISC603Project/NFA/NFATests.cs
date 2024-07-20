@@ -46,6 +46,15 @@ namespace CISC603Project.NFA
             result.Should().BeTrue();
         }
         [Fact]
+        public void Test4Accepting()
+        {
+            //Act
+            var result = automata.IsAccepting(".0111");
+
+            //Assert
+            result.Should().BeTrue();
+        }
+        [Fact]
         public void Test1NotAccepting()
         {
             //Act
